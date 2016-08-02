@@ -6,8 +6,10 @@
   </head>
   <body>
     <h1>It's  Dog-eat-dog world out there and ya better watch out.</h1>
-    <p>
-      {{.Breed}}
-    </p>
+    <ul>
+      {{range $key, $value := .}}
+        <li>{{ $value }}</li>
+      {{end}}
+    </ul>
   </body>
 </html>
